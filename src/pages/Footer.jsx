@@ -4,24 +4,27 @@ import twitter from '../twitter.png';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import '../css/Footer.css';
 
 const Footer = () => {
     return (
-        <Container fluid>
-            <Row>
-                <Col md={6} lg={3}>
-                    <p>John Doe</p>
+        <Container fluid className='footer'>
+            <Row className='rowFooter'>
+                <Col className='colFooter' md={6} lg={3}>
+                    <h3>John Doe</h3>
                     <p>40 rue Laure Diebold</p>
                     <p>69009 Lyon, France</p>
                     <p>Téléphone : 06 20 30 40 50</p>
-                    <Row>
-                        <Col xs={4}><a href='https://github.com' target='_blank'><img src={github} alt='icône de Github'></img></a></Col>
-                        <Col xs={4}><a href='https://linkedin.com' target='_blank'><img src={linkedin} alt='icône de Linkedin'></img></a></Col>
-                        <Col xs={4}><a href='https://twitter.com' target='_blank'><img src={twitter} alt='icône de Twitter'></img></a></Col>        
+                    <Row className='logos'>
+                        <Col>
+                            <a href='https://github.com' target='_blank'><img src={github} alt='icône de Github'></img></a>
+                            <a href='https://twitter.com' target='_blank'><img src={twitter} alt='icône de Twitter'></img></a>
+                            <a href='https://linkedin.com' target='_blank'><img src={linkedin} alt='icône de Linkedin'></img></a>     
+                        </Col>
                     </Row>
                 </Col>
-                <Col md={6} lg={3}>
-                    <p>Liens utiles</p>
+                <Col className='colFooter' md={6} lg={3}>
+                    <h3>Liens utiles</h3>
                     <ul>
                         <li><a href="" >Accueil</a></li>
                         <li><a href="">A propos</a></li>
@@ -30,16 +33,16 @@ const Footer = () => {
                         <li><a href="">Mentions légales</a></li>
                     </ul>
                 </Col>
-                <Col md={6} lg={3}>
-                    <p>Mes dernières réalisations</p>
+                <Col className='colFooter' md={6} lg={3}>
+                    <h3>Mes dernières réalisations</h3>
                     <ul>
                         <li><a href="">Fresh food</a></li>
                         <li><a href="">Restaurant Akira</a></li>
                         <li><a href="">Espace bien-être</a></li>
                     </ul>
                 </Col>
-                <Col md={6} lg={3}>
-                    <p>Mes derniers articles</p>
+                <Col className='colFooter' md={6} lg={3}>
+                    <h3>Mes derniers articles</h3>
                     <ul>
                         <li><a href="">Coder son site en HTML/CSS</a></li>
                         <li><a href="">Vendre ses produits sur le web</a></li>
@@ -48,7 +51,7 @@ const Footer = () => {
                 </Col>
             </Row>
             <Row>
-                <p className='copyright'>Designed by John Doe</p>
+                <small className='copyright'> &copy; Designed by John Doe</small>
             </Row>
         </Container>
     )
