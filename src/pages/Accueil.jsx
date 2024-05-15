@@ -5,26 +5,27 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import '../css/Accueil.css';
 
 const Accueil = () => {
     return (
-        <Container fluid>
+        <Container fluid id="accueil">
             <Col>
-                <div>
+                <section className='present'>
                     <h1>Bonjour, je suis John Doe</h1>
                     <h2>Développeur web full stack</h2>
-                    <Button variant='primary'>En savoir plus</Button>
-                </div>        
-                <Card>
-                    <Card.Body>           
+                    <Button variant='primary' href="#about">En savoir plus</Button>
+                </section>        
+                <section id="card">
+                    <div id="cardBody">           
                         <Row>
                             <Col md={6}>
-                                <h3>A propos</h3>
+                                <h3 id="about">A propos</h3>
                                 <p>Passionné par l'informatique et les nouvelles technologies, j'ai suivi une formation d'intégrateur-développeur web au CEF. Au cours de cette formation, j'ai pu acquérir des bases solides pour travailler dans le domaine du développement web.</p>
                                 <p>Basé à Lyon, je suis en recherche d'une alternance au sein d'une agence digitale pour consolider ma formation de développeur web full stack.</p>
                                 <p>J'accorde une attention particulière à la qualité du code que j'écris et je respecte les bonnes pratiques du web.</p>
                             </Col>
-                            <Col md={6}>
+                            <Col md={6} id="progress">
                                 <figure>
                                     <img src={about} alt='photo de John Doe'></img>
                                 </figure>
@@ -41,8 +42,8 @@ const Accueil = () => {
                                 <ProgressBar now={50} />
                             </Col>
                         </Row>
-                    </Card.Body>
-                </Card>
+                    </div>
+                </section>
             </Col>
         </Container>                   
     )

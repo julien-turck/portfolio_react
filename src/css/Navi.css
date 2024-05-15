@@ -1,0 +1,20 @@
+.navbarContain{
+    margin: 10px;
+    max-width: 100%;
+}
+
+#basic-navbar-nav{
+    justify-content: right;
+    max-width: 100%;
+}
+
+.link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: gray;
+    margin-right: 10px;
+}
+
+.link:hover{
+    color: white;
+}

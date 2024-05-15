@@ -3,9 +3,7 @@
     text-align: left;
 }
 
-.rowFooter {
-    padding-left: 30px;
-}
+
 
 .colFooter {
     padding: 30px;
@@ -51,4 +49,10 @@
     background-color: #000000;
     text-align: center;
     color: white;
+}
+
+@media screen and (min-width: 992px) {
+    .rowFooter {
+        padding-left: 30px;
+    }
 }
