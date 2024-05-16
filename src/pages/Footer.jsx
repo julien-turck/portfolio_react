@@ -5,6 +5,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import '../css/Footer.css';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -26,10 +28,10 @@ const Footer = () => {
                 <Col className='colFooter' md={6} lg={3}>
                     <h3>Liens utiles</h3>
                     <ul>
-                        <li><a href="" >Accueil</a></li>
-                        <li><a href="">A propos</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Me contacter</a></li>
+                        <li><Link to="/">Accueil</Link></li>
+                        <li><a href="/#about">A propos</a></li>
+                        <li><Link to="/services">Services</Link></li>
+                        <li><Link to="/contacts">Me contacter</Link></li>
                         <li><a href="">Mentions légales</a></li>
                     </ul>
                 </Col>

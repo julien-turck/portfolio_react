@@ -8,7 +8,7 @@
 
 .present{
     background-image: linear-gradient(rgba(0, 0, 0, 0.3),
-        rgba(0, 0, 0, 0.3)), url(../img/hero-bg.jpg);
+        rgba(0, 0, 0, 0.3)), url(../img/hero-bg-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     align-content: center;
@@ -25,13 +25,13 @@
 }
 
 #cardBody {
-    width: 90%;
     background-color: white;
     padding: 20px;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border: 3px solid white;
     border-radius: 0.5%;
-    box-shadow: 10px 10px 10px 10px silver;
+    box-shadow: 5px 5px 5px 5px silver;
 }
 
 #about {
@@ -49,4 +49,35 @@ figure{
 
 img {
     width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    #cardBody {
+        margin: 20px;
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .present {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)),
+        url(../img/hero-bg-tablette.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        height: 600px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .present {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3),
+                rgba(0, 0, 0, 0.3)),
+            url(../img/hero-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        height: 600px;
+    }
 }

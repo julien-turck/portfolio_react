@@ -8,7 +8,7 @@ import '../css/Navi.css';
 const Navi = () => {
   return (
     <NavBar expand="lg" bg="dark" data-bs-theme="dark" className="navbar">  
-      <Container className="navbarContain">
+      <Container id="navbarContain">
         <NavBar.Brand href="#">JOHN DOE</NavBar.Brand>
         <NavBar.Toggle aria-controls="basic-navbar-nav" />
         <NavBar.Collapse id="basic-navbar-nav">

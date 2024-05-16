@@ -7,6 +7,7 @@ import CardGroup from 'react-bootstrap/CardGroup'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import '../css/Services.css';
 
 const Services = () => {
     return (
