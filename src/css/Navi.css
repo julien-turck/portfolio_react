@@ -9,13 +9,17 @@
     max-width: 100%;
 }
 
+#brand {
+    text-transform: uppercase;
+}
+
 .link {
     text-decoration: none;
     text-transform: uppercase;
-    color: gray;
+    color: #444;
     margin-right: 10px;
 }
 
 .link:hover{
-    color: white;
+    color: rgba(255, 255, 255, 0.8);
 }

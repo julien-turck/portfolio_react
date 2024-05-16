@@ -9,7 +9,7 @@ const Navi = () => {
   return (
     <NavBar expand="lg" bg="dark" data-bs-theme="dark" className="navbar">  
       <Container id="navbarContain">
-        <NavBar.Brand href="#">JOHN DOE</NavBar.Brand>
+        <NavBar.Brand href="#" id='brand'>john doe</NavBar.Brand>
         <NavBar.Toggle aria-controls="basic-navbar-nav" />
         <NavBar.Collapse id="basic-navbar-nav">
           <Nav>

@@ -34,13 +34,21 @@
     box-shadow: 5px 5px 5px 5px silver;
 }
 
-#about {
-    border-bottom: 3px solid #0d6efd;
+#hr {
+    margin-bottom: 5%;
 }
+
+/*#about {
+    border-bottom: 3px solid #0d6efd;
+}*/
 
 #progress {
     display: flex;
     flex-direction: column;
+}
+
+.intitule {
+    text-transform: uppercase;
 }
 
 figure{
