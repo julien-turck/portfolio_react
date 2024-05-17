@@ -32,7 +32,7 @@ const Footer = () => {
                         <li><a href="/#about">A propos</a></li>
                         <li><Link to="/services">Services</Link></li>
                         <li><Link to="/contacts">Me contacter</Link></li>
-                        <li><a href="">Mentions légales</a></li>
+                        <li><Link to="/mentions">Mentions légales</Link></li>
                     </ul>
                 </Col>
                 <Col className='colFooter' md={6} lg={3}>
