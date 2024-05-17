@@ -18,7 +18,7 @@ const Accueil = () => {
                 </section>        
                 <section id="card">
                     <div id="cardBody">           
-                        <Row>
+                        <Row >
                             <Col md={6}>
                                 <h3 id="about">A propos</h3>
                                 <div id='hr'></div>

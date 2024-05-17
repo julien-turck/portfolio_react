@@ -12,18 +12,16 @@ import '../css/Realisations.css';
 
 const Realisations = () => {
     return (
-        <Container fluid>
-            <figure>
-                <img src={banner} alt='image électrisante'></img>
-            </figure>
-            <div>
-                <h3>PORTFOLIO</h3>
+        <Container fluid id="container">
+            <section>
+                <h3 className='titleSection'>portfolio</h3>                
                 <p>Voici quelques-unes de mes réalisations.</p>
-            </div>
+                <div id='hr'></div>                              
+            </section>
             <Row>
-                <CardGroup>
+                <CardGroup id="cardGroup">
                     <Col md={6} lg={4}>
-                        <Card>
+                        <Card id='freshFood'>
                             <div>
                                 <Card.Img src={freshfood} alt="photo d'un plateau repas" />
                                 <Card.Body>
@@ -31,16 +29,16 @@ const Realisations = () => {
                                     <Card.Text>
                                         Réalisation d'un site avec commande en ligne
                                     </Card.Text>
-                                </Card.Body>
-                                <Button variant='outline-primary'>Voir</Button>
-                                <Card.Footer>
+                                    <Button variant='outline-primary'>Voir</Button>
+                                </Card.Body>                                
+                                <Card.Footer id='footerFreshFood'>
                                     <p>Site réalisé avec PHP et MySQL</p>
                                 </Card.Footer>
                             </div>
                         </Card>
                     </Col>
                     <Col md={6} lg={4}>
-                        <Card>
+                        <Card id='akira'>
                             <div>
                                 <Card.Img src={akira} alt="photo de sushis" />
                                 <Card.Body>
@@ -48,16 +46,16 @@ const Realisations = () => {
                                     <Card.Text>
                                         Réalisation d'un site vitrine
                                     </Card.Text>
+                                    <Button variant='outline-primary'>Voir</Button>
                                 </Card.Body>
-                                <Button variant='outline-primary'>Voir</Button>
-                                <Card.Footer>
+                                <Card.Footer id='footerAkira'>
                                     <p>Site réalisé avec WordPress</p>
                                 </Card.Footer>
                             </div>
                         </Card>
                     </Col>
                     <Col md={6} lg={4}>
-                        <Card>
+                        <Card id='bienEtre'>
                             <div>
                                 <Card.Img src={bienetre} alt="photo japonisante" />
                                 <Card.Body>
@@ -65,9 +63,9 @@ const Realisations = () => {
                                     <Card.Text>
                                         Réalisation d'un site vitrine pour un patricien de bien-être
                                     </Card.Text>
-                                </Card.Body>
-                                <Button variant='outline-primary'>Voir</Button>
-                                <Card.Footer>
+                                    <Button variant='outline-primary'>Voir</Button>
+                                </Card.Body>                                
+                                <Card.Footer id='footerBienEtre'>
                                     <p>Site réalisé en HTML/CSS</p>
                                 </Card.Footer>
                             </div>
