@@ -1,0 +1,57 @@
+.footer {
+    background-color: silver;
+    text-align: left;
+    padding-top: 2%;
+}
+
+/*.colFooter {
+    padding-top: 30px;
+}*/
+
+.colFooter h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.colFooter p {
+    line-height: 5px;
+}
+
+.colFooter ul {
+    list-style: none;
+}
+
+.colFooter li {
+        background-image: url('../img/symbole-fleche-droite-bleu.png');
+        background-size: 10px;
+        background-repeat: no-repeat;
+        background-position: 1px;
+        padding-left: 15px;
+}
+
+.colFooter a {
+    text-decoration: none;
+    color: #444;
+}
+
+.logos {
+    align-items: left;
+}
+
+.logos img {
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+}
+
+.copyright {
+    background-color: #000000;
+    text-align: center;
+    color: white;
+}
+
+@media screen and (min-width: 768px) {
+    .rowFooter {
+        padding-left: 2%;
+    }
+}

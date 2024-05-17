@@ -1,0 +1,46 @@
+#containerContact {
+    background-image: linear-gradient(rgba(0, 105, 255, 0.5),
+            rgba(0, 105, 255, 0.5)), url(../img/contact-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    padding-left: 0px;
+}
+
+#intro {
+    margin-bottom: 5%;
+}
+
+.titleSection {
+    text-transform: uppercase;
+}
+
+.hr {
+    border: 3px solid #0d6efd;
+    margin-bottom: 5%;
+}
+
+.sectionTitle {
+    text-align: left;
+}
+
+.label {
+    margin-bottom: 2%;
+}
+
+.coordonnées {
+    display: flex;
+    flex-direction: row;
+}
+
+.iconeContain {
+    height: 18px;
+    width: 18px;
+}
+
+.icone {
+    height: 100%;
+    width: 100%;
+    object-fit: auto;
+}

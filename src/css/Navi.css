@@ -1,0 +1,25 @@
+#navbarContain{
+    margin: 10px;
+    max-width: 100%;
+    margin: 0px;
+}
+
+#basic-navbar-nav{
+    justify-content: right;
+    max-width: 100%;
+}
+
+#brand {
+    text-transform: uppercase;
+}
+
+.link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #444;
+    margin-right: 10px;
+}
+
+.link:hover{
+    color: rgba(255, 255, 255, 0.8);
+}
