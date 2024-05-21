@@ -4,10 +4,6 @@
     padding-top: 2%;
 }
 
-/*.colFooter {
-    padding-top: 30px;
-}*/
-
 .colFooter h3 {
     font-size: 18px;
     font-weight: bold;
@@ -22,7 +18,7 @@
 }
 
 .colFooter li {
-        background-image: url('../img/symbole-fleche-droite-bleu.png');
+        background-image: url('../img/chevron.svg');
         background-size: 10px;
         background-repeat: no-repeat;
         background-position: 1px;

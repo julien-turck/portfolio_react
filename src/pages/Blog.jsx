@@ -16,8 +16,8 @@ import '../css/Blog.css';
 const Blog = () => {
     return (
         <Container fluid id="container">
-            <section>
-                <h3 className='titleSection'>blog</h3>
+            <section id='intro'>
+                <h3 id='titleSection'>blog</h3>
                 <p>Retrouvez ici quelques articles sur le développement web.</p>
                 <div id='hr'></div>
             </section>

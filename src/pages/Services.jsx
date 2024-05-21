@@ -9,12 +9,10 @@ import '../css/Services.css';
 const Services = () => {
     return (
         <Container fluid id="container">
-            <section>
+            <section id='intro'>
                 <h3 className='titleSection'>mon offre de services</h3>
-                <div>
-                    <p id='intro'>Voici les presations sur lesquelles je peux intervenir.</p>
-                    <div id='hr'></div>
-                </div>                
+                <p>Voici les presations sur lesquelles je peux intervenir.</p>
+                <div id='hr'></div>             
             </section>
             <Row>
                 <CardGroup id='cardGroup'>
