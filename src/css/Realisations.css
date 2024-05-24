@@ -8,31 +8,56 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-}#intro {
+}
+
+#intro {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#titleSection {
+#linkApi {
+    text-decoration: none;
+    color: #444;
+}
+
+#linkApi:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+.titleSection {
     text-transform: uppercase;
+    color: #1e1e1e;
 }
 
 #hr {
     border: 2px solid #0d6efd;
+    width: 200px;
 }
 
 #cardGroup {
     margin-bottom: 1%;
 }
 
+#titleFreshFood {
+    color: #1e1e1e;
+}
+
 #freshFood {
     padding-top: 0px;
 }
 
+#titleAkira {
+    color: #1e1e1e;
+}
+
 #akira {
     padding-top: 0px;
+}
+
+#titleBienEtre {
+    color: #1e1e1e;
 }
 
 #bienEtre {

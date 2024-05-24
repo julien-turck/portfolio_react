@@ -9,6 +9,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import '../css/Realisations.css';
+import { Link } from "react-router-dom";
 
 const Realisations = () => {
     return (
@@ -16,6 +17,7 @@ const Realisations = () => {
             <section id='intro'>
                 <h3 className='titleSection'>portfolio</h3>                
                 <p>Voici quelques-unes de mes réalisations.</p>
+                <p><Link id="linkApi" to="/apigithub" target='_blank'>Cliquez ici</Link> pour accéder aux Repositories GIthub des projets présentés.</p>
                 <div id='hr'></div>                              
             </section>
             <Row>
@@ -25,7 +27,7 @@ const Realisations = () => {
                             <div>
                                 <Card.Img src={freshfood} alt="photo d'un plateau repas" />
                                 <Card.Body>
-                                    <Card.Title>Fresh food</Card.Title>
+                                    <Card.Title id='titleFreshFood'>Fresh food</Card.Title>
                                     <Card.Text>
                                         Réalisation d'un site avec commande en ligne
                                     </Card.Text>
@@ -42,7 +44,7 @@ const Realisations = () => {
                             <div>
                                 <Card.Img src={akira} alt="photo de sushis" />
                                 <Card.Body>
-                                    <Card.Title>Restaurant Akira</Card.Title>
+                                    <Card.Title id='titleAkira'>Restaurant Akira</Card.Title>
                                     <Card.Text>
                                         Réalisation d'un site vitrine
                                     </Card.Text>
@@ -59,7 +61,7 @@ const Realisations = () => {
                             <div>
                                 <Card.Img src={bienetre} alt="photo japonisante" />
                                 <Card.Body>
-                                    <Card.Title>Espace bien-être</Card.Title>
+                                    <Card.Title id='titleBienEtre'>Espace bien-être</Card.Title>
                                     <Card.Text>
                                         Réalisation d'un site vitrine pour un patricien de bien-être
                                     </Card.Text>

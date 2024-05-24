@@ -1,0 +1,18 @@
+#github {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+    color: #1e1e1e;
+}
+
+#name {
+    color: #1e1e1e;
+}
+
+#avatarContain {
+    height: 200px;
+    width: 200px;
+}
