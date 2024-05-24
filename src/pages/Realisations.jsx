@@ -17,7 +17,7 @@ const Realisations = () => {
             <section id='intro'>
                 <h3 className='titleSection'>portfolio</h3>                
                 <p>Voici quelques-unes de mes réalisations.</p>
-                <p><Link id="linkApi" to="/apigithub" target='_blank'>Cliquez ici</Link> pour accéder aux Repositories GIthub des projets présentés.</p>
+                <p><Link id="linkApi" to="/apigithub">Cliquez ici</Link> pour accéder aux Repositories Github des projets présentés.</p>
                 <div id='hr'></div>                              
             </section>
             <Row>
