@@ -1,6 +1,20 @@
+@font-face {
+  font-family: "nunitoSans";
+  src: url(../src/polices/NunitoSans_Italic.ttf);
+  src: url(../src/polices/NunitoSans_Regular.ttf);
+  src: url(../src/polices/NunitoSans_SemiBold.ttf);
+}
+
 .App {
   text-align: center;
 }
 
+*{
+    font-family: "nunitoSans", sans-serif;
+    color: #444;
+}
 
+h1, h2, h3, h4{
+  color: #1e1e1e;
+}
 

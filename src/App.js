@@ -8,7 +8,8 @@ import Services from './pages/Services';
 import Navi from './pages/Navi';
 import Footer from './pages/Footer';
 import Mentions from './pages/Mentions';
-
+import ScrollToTopButton from './pages/ScrollToTopButton';
+import ApiGithub from './pages/ApiGithub';
 function App() {
   return (
     <div className="App">
@@ -20,7 +21,9 @@ function App() {
         <Route path="/realisations" element={<Realisations />} />
         <Route path="/services" element={<Services />} />
         <Route path="/mentions" element={<Mentions />} />
+        <Route path="/apigithub" element={<ApiGithub />} />
       </Routes>
+      <ScrollToTopButton />
       <Footer />      
     </div>
   );

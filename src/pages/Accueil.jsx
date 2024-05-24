@@ -20,11 +20,11 @@ const Accueil = () => {
                     <div id="cardBody">           
                         <Row >
                             <Col id="about" md={6}>
-                                <h3 id='titleAbout'>à propos</h3>
+                                <h3 className='titleAbout'>à propos</h3>
                                 <div id='hrAbout'></div>
                                 <div id='textAbout'>
-                                    <p>Passionné par l'informatique et les nouvelles technologies, j'ai suivi une formation d'<strong>intégrateur-développeur web</strong> au CEF. Au cours de cette formation, j'ai pu acquérir des bases solides pour travailler dans le domaine du <strong>développement web</strong>.</p>
-                                    <p>Basé à Lyon, je suis en recherche d'une alternance au sein d'une agence digitale pour consolider ma formation de <strong>développeur web full stack</strong>.</p>
+                                    <p>Passionné par l'informatique et les nouvelles technologies, j'ai suivi une formation d'<strong className='strong'>intégrateur-développeur web</strong> au CEF. Au cours de cette formation, j'ai pu acquérir des bases solides pour travailler dans le domaine du <strong className='strong'>développement web</strong>.</p>
+                                    <p>Basé à Lyon, je suis en recherche d'une alternance au sein d'une agence digitale pour consolider ma formation de <strong className='strong'>développeur web full stack</strong>.</p>
                                     <p>J'accorde une attention particulière à la qualité du code que j'écris et je respecte les bonnes pratiques du web.</p>
                                 </div>                                
                             </Col>
@@ -32,7 +32,7 @@ const Accueil = () => {
                                 <figure>
                                     <img src={about} alt='photo de John Doe'></img>
                                 </figure>
-                                <h3>Mes compétences</h3>
+                                <h3 className='titleAbout'>mes compétences</h3>
                                 <div className='progressBar'>
                                     <p className='intitule'>html5 90%</p>
                                     <ProgressBar variant='danger' now={90} />

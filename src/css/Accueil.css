@@ -34,7 +34,11 @@
     box-shadow: 5px 5px 5px 5px silver;
 }
 
-#titleAbout::first-letter {
+.titleAbout {
+    color: #1e1e1e;
+}
+
+.titleAbout::first-letter {
     text-transform: uppercase;
 }
 
@@ -82,7 +86,6 @@ img {
         url(../img/hero-bg-tablette.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        color: white;
         height: 600px;
     }
 }
@@ -94,7 +97,6 @@ img {
             url(../img/hero-bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        color: white;
         height: 600px;
     }
 }

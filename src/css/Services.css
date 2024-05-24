@@ -1,3 +1,7 @@
+h3,h4{
+    color: #1e1e1e;
+}
+
 #container {
     padding: 0px;
     background-image: url(../img/banner-mobile.jpg);
@@ -19,6 +23,7 @@
 .title,
 .titleSection {
     text-transform: uppercase;
+    color: #1e1e1e;
 }
 
 #hr {
@@ -44,6 +49,7 @@
     background-position: top;
     padding-top: 100px;
     text-align: center;
+    
 }
 #uxDesign:hover {
     background-image: url(../img/ecranSurvol.svg);
@@ -89,6 +95,10 @@
 
 .text {
     padding-bottom: 50px;    
+}
+
+.strong {
+    color: #000000;
 }
 
 @media screen and (min-width: 768px) {

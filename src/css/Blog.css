@@ -16,12 +16,14 @@
     align-items: center;
 }
 
-#titleSection {
+.titleSection {
     text-transform: uppercase;
+    color: #1e1e1e;
 }
 
 #hr {
     border: 2px solid #0d6efd;
+    width: 200px;
 }
 
 #cardGroup {
@@ -29,24 +31,48 @@
     text-align: left;
 }
 
+#titleCoder {
+    color: #1e1e1e;
+}
+
 #coder {
     padding-top: 0px;
+}
+
+#titleCroissance {
+    color: #1e1e1e;
 }
 
 #croissance {
     padding-top: 0px;
 }
 
+#titleGoogle {
+    color: #1e1e1e;
+}
+
 #google {
     padding-top: 0px;
+}
+
+#titleScreens {
+    color: #1e1e1e;
 }
 
 #screens {
     padding-top: 0px;
 }
 
+#titleSeo {
+    color: #1e1e1e;
+}
+
 #seo {
     padding-top: 0px;
+}
+
+#titleTechnos {
+    color: #1e1e1e;
 }
 
 #technos {
