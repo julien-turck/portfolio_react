@@ -56,7 +56,7 @@ Le transfert se fait en utilisant le protocole FTP, à l'aide d'un outil de tran
 
 Le projet est actuellement mis en ligne à partir de la plateforme [alwaysdata](https://alwaysdata.net), dont voici le lien : [Portfolio John Doe](https://julienturck.alwaysdata.net).
 
-Est inclus dans le projet une fonction séparée permettant l'affichage des informations du compte Github de Jonh Doe.
+Est inclus dans le projet une fonction séparée permettant l'affichage des informations du compte Github de Jonh Doe. Il est accessible depuis la pages [Réalisations], en cliquant sur le lien annoncé.
 Pour des raisons de compatibilités avec le serveur, le lien pointe vers une App hébergée sur [codesansbox](https://codesandbox.io) dont voici le lien de visualisation : [Github John Doe](https://zz6c9j.csb.app)
 Toutefois, une version intégrée en local est également présente dans le projet. Il s'agit des fichiers ApiGithub.jsx pour la partie contenu ainsi que ApiGithub.css pour la partie style. Pour l'inclure dans le build, ouvrez le projet dans visual studio est copiez-collez les deux lignes suivantes :
 

@@ -1,6 +1,5 @@
 import about from '../img/john-doe-about.jpg'
 import ProgressBar from 'react-bootstrap/ProgressBar';
-import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -30,7 +29,7 @@ const Accueil = () => {
                             </Col>
                             <Col md={6} id="progress">
                                 <figure>
-                                    <img src={about} alt='photo de John Doe'></img>
+                                    <img src={about} alt='John Doe'></img>
                                 </figure>
                                 <h3 className='titleAbout'>mes compétences</h3>
                                 <div className='progressBar'>
