@@ -29,7 +29,7 @@ export default class ApiGithub extends React.Component {
             <p>Abonnements : {this.state.persons.following}</p>
             <p>Créé le : {this.state.persons.created_at}</p>
             <p>Modifié le :{this.state.persons.updated_at}</p>
-            <p>URL repositories : <a href={this.state.persons.repos_url}   rel='nofollow'>{this.state.persons.repos_url}</a></p>
+            <p>URL repositories : <a href={this.state.persons.repos_url} target="_blank" rel='nofollow'>{this.state.persons.repos_url}</a></p>
           </div>            
         )
     }

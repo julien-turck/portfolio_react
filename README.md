@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Portfolio de John Doe avec React JS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ce fichier est là pour vous aider à visualiser le portfolio de John Doe, réalisé avec React JS.
+Vous pourrez également le modifier afin de l'améliorer et de vous l'approprier.
+Attention : Toutes mes explications sont optimisées pour l'OS Windows 10 et 11
 
-## Available Scripts
+## Configuration machine préalable
 
-In the project directory, you can run:
+Installation des logiciels suivants :
+[VSCode](https://code.visualstudio.com/) + [Node.js](https://nodejs.org/download)
 
-### `npm start`
+## installation du projet sur votre machine
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Après téléchargement du projet à cette adresse : [portfolio_react](https://github.com/julien-turck/portfolio_react)
+Dézippez le fichier afin que vue-project devienne le dossier racine du projet (si le nom du dossier contient d'autres éléments que vue-project, supprimez les en renommant le dossier)
+Placez le à la racine du même lecteur que le logiciel Node.js pour plus de confort.
+Attention : la première fois, ne modifiez pas l'arborescence des dossiers et fichiers du projets, sous peine que celui-ci comportent d'importantes erreurs ou qu'il soit inutilisable
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Afficher le projet
 
-### `npm test`
+Démarrez 'Node.js command prompt' installé avec Node.js puis tapez les commandes suivantes, dans l'ordre, pour:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+vous placez sur le bon dossier :
 
-### `npm run build`
+```sh
+cd portfolio_react
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Attention : vue-project est le nom de base du projet. Si vous avez modifié le nom du dossier contenant le projet, il faudra adapter la commande en conséquence.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+démarrez la compilation du projet :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+npm start
+```
 
-### `npm run eject`
+Dans la barre d'URL d'un navigateur Internet, copiez et collez l'adresse local de type http://localhost:XXXX apparue dans la nouvelle fenêtre (XXXX étant à remplacer par le nombre correspondant au port qui lui sera reservé sur votre machine)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Modifier le projet
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Démarrez le logiciel Visual Studio Code, puis dans le menu file, cliquez sur Open Folder. Depuis la nouvelle fenêtre, recherchez le dossier projet dans l'explorateur de fichiers de votre machine. Double-cliquez dessus pour le selectionner.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Créer un build exploitable pour les hébergeurs
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Pour sa mise en ligne, il est important de "builder" le projet afin qu'il soit expoitable par les serveurs des hébergeurs.
+Pour se faire, toujours dans Node.js, une fois placé dans le dossier du projet, tapez la commande suivante :
 
-## Learn More
+```sh
+npm run build
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Un dossier Build s'inserera dans le dossier complet du projet. C'est le contenu de ce dossier qu'il faudra transférer sur votre serveur dédié par votre hebergeur.
+Le transfert se fait en utilisant le protocole FTP, à l'aide d'un outil de transfert tiers comme Filezilla en téléchargeant la version "client" à cette adresse : [Filezilla](https://filezilla-project.org).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Mise en ligne et lien vers l'API Github intégrée
 
-### Code Splitting
+Le projet est actuellement mis en ligne à partir de la plateforme [alwaysdata](https://alwaysdata.net), dont voici le lien : [Portfolio John Doe](https://julienturck.alwaysdata.net).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Est inclus dans le projet une fonction séparée permettant l'affichage des informations du compte Github de Jonh Doe.
+Pour des raisons de compatibilités avec le serveur, le lien pointe vers une App hébergée sur [codesansbox](https://codesandbox.io) dont voici le lien de visualisation : [Github John Doe](https://zz6c9j.csb.app)
+Toutefois, une version intégrée en local est également présente dans le projet. Il s'agit des fichiers ApiGithub.jsx pour la partie contenu ainsi que ApiGithub.css pour la partie style. Pour l'inclure dans le build, ouvrez le projet dans visual studio est copiez-collez les deux lignes suivantes :
 
-### Analyzing the Bundle Size
+```sh
+import { Link } from "react-router-dom";
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+(à intégrer au début de la page qui contiendra le lien)
 
-### Making a Progressive Web App
+```sh
+<Link id="linkApi" to="/apigithub">Cliquez ici</Link>
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+(à intégrer à l'intérieur du code jsx)
 
-### Advanced Configuration
+Attention ! la ligne ci-dessous, présente dans Realisations.jsx sera également à supprimer afin de ne pas faire doublon :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```sh
+<p><a href="https://zz6c9j.csb.app" target="_blank" id="linkApi">Cliquez ici</a> pour accéder aux Repositories Github des projets présentés.</p>
+```
