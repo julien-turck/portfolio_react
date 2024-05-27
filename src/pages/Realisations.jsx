@@ -1,7 +1,6 @@
 import freshfood from '../img/portfolio/fresh-food.jpg'
 import akira from '../img/portfolio/akira.jpg'
 import bienetre from '../img/portfolio/espace-bien-etre.jpg'
-import banner from '../img/banner.jpg'
 import Card from 'react-bootstrap/Card'
 import CardGroup from 'react-bootstrap/CardGroup'
 import Button from 'react-bootstrap/Button'
