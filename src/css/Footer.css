@@ -7,7 +7,6 @@
 .colFooter {
     display: flex;
     flex-direction: column;
-    align-items: left;
 }
 
 .colFooter h3 {
@@ -40,10 +39,6 @@
 .colFooter a:hover {
     text-decoration: none;
     color: black;
-}
-
-.logos {
-    align-items: left;
 }
 
 .logos img {
