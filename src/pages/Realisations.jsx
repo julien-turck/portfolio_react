@@ -8,7 +8,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import '../css/Realisations.css';
-import { Link } from "react-router-dom";
 
 const Realisations = () => {
     return (
@@ -16,7 +15,7 @@ const Realisations = () => {
             <section id='intro'>
                 <h3 className='titleSection'>portfolio</h3>                
                 <p>Voici quelques-unes de mes réalisations.</p>
-                <p><a href="https://zz6c9j.csb.app" target="_blank" id="linkApi">Cliquez ici</a> pour accéder aux Repositories Github des projets présentés.</p>
+                <p><a href="https://zz6c9j.csb.app" target="_blank" id="linkApi">Cliquez ici pour retrouver mon compte Github utilisé dans la création des projets présentés.</a></p>
                 <div id='hr'></div>                              
             </section>
             <Row>

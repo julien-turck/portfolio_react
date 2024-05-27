@@ -22,7 +22,7 @@ export default class ApiGithub extends React.Component {
             <h3 id="title">Github user</h3>      
             <h4 id="name">{this.state.persons.name}</h4>
             <figure id="avatarContain">
-              <img src={this.state.persons.avatar_url}></img>
+              <img src={this.state.persons.avatar_url} alt="chat rigolo"></img>
             </figure>            
             <p>{this.state.persons.bio}</p>
             <p>Abonnés : {this.state.persons.followers}</p>
